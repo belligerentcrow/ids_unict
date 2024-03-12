@@ -3,11 +3,11 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.LineNumberReader;
 import java.util.ArrayList;
-import java.util.List;
+//import java.util.List;
 
 public class Pagamenti {
     private ArrayList<String> importiLetti = new ArrayList<>();
-    private List<Float> valori = new ArrayList<>(); //Per forza Float con la lettera maiuscola perche' serve un tipo non primitivo.
+    //private List<Float> valori = new ArrayList<>(); //Per forza Float con la lettera maiuscola perche' serve un tipo non primitivo.
     private float totale, massimo;
     public void leggiFile(String c, String n) throws IOException {
         LineNumberReader f = new LineNumberReader(new FileReader(new File(c, n)));
