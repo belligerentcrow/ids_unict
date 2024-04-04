@@ -9,7 +9,7 @@
 
 ---
 
-1. [Lezione 1](01_05-03-24_ids.md#1-lezione----ingegneria-del-software)
+1. [**Lezione 1**](01_05-03-24_ids.md#1-lezione----ingegneria-del-software)
     1. [Informazioni del corso](01_05-03-24_ids.md#informazioni-del-corso)
         1. [Libri consigliati](01_05-03-24_ids.md#libri-consigliati)
     2. [Definizioni importanti](01_05-03-24_ids.md#definizioni-importanti)
@@ -18,12 +18,12 @@
         3. [Refactoring](01_05-03-24_ids.md#definizione-di-refactoring) 
     3. [Obiettivi della Software Engineering](01_05-03-24_ids.md#obiettivi)
 
-2. [Lezione 2](02_07-03-24_ids.md#2-lezione----ingegneria-del-software)
+2. [**Lezione 2**](02_07-03-24_ids.md#2-lezione----ingegneria-del-software)
     1. [Esercizio/Esempio pratico](2_07-03-24_ids.md#esempio-pratico--esercizio)
         1. [List : Interfaccia/classe astratta](2_07-03-24_ids.md#interfacce)
         2. [Convenzioni](2_07-03-24_ids.md#convenzioni)  
 
-3. [Lezione 3](03_12-03-24_ids.md#3-lezione---ingegneria-del-software)
+3. [**Lezione 3**](03_12-03-24_ids.md#3-lezione---ingegneria-del-software)
     1. [Recap e domande sul codice CalcolaImporti](03_12-03-24_ids.md#recap-e-domande)
     2. [Problemi del codice e Spaghetti-code](03_12-03-24_ids.md#problemi-del-codice-e-spaghetti-code)
     3. [Progettazione ad oggetti](03_12-03-24_ids.md#progettazione-ad-oggetti)
@@ -31,7 +31,7 @@
     5. [Statistiche](03_12-03-24_ids.md#statistiche)
     6. [Conclusione](03_12-03-24_ids.md#conclusione)
 
-4. [Lezione 4](04_14-03-24_ids.md#4-lezione----ingegneria-del-software)
+4. [**Lezione 4**](04_14-03-24_ids.md#4-lezione----ingegneria-del-software)
     1. [Miglioramenti sul codice](04_14-03-24_ids.md#miglioramenti-sul-codice)
     2. [Qualita' e test](04_14-03-24_ids.md#qualita-e-test)
     3. [Esempio: classe Test per la classe Pagamenti](04_14-03-24_ids.md#esempio-classe-test-per-la-classe-pagamenti)
@@ -42,17 +42,17 @@
     4. [Classi](04_14-03-24_ids.md#classi)
         1. [Design Pattern Singleton](04_14-03-24_ids.md#design-pattern-singleton)
 
-5. [Lezione 5]()
+5. [**Lezione 5**]()
 
-6. [Lezione 6](06_21-03-24_ids.md#6-lezione----ingegneria-del-software)
+6. [**Lezione 6**](06_21-03-24_ids.md#6-lezione----ingegneria-del-software)
     1. [Ripasso Ereditarieta'](06_21-03-24_ids.md#ripasso-ereditarieta)
     2. [Diagramma UML di sequenza](06_21-03-24_ids.md#diagramma-uml-di-sequenza)
     3. [Polimorfismo e Late Binding](06_21-03-24_ids.md#polimorfismo-e-late-binding)
         1. [Casting](06_21-03-24_ids.md#casting)
     
-7. [Lezione 7]()
+7. [**Lezione 7**]()
 
-8. [Lezione 8](08_04-04-24_ids.md#8-lezione----ingegneria-del-software)
+8. [**Lezione 8**](08_04-04-24_ids.md#8-lezione----ingegneria-del-software)
     1. [Recap lezione prima](08_04-04-24_ids.md#recap-lezione-prima)
     2. [Design Pattern](08_04-04-24_ids.md#design-pattern)
     3. [**Descrizione** di un Pattern](08_04-04-24_ids.md#descrizione-di-un-pattern)
