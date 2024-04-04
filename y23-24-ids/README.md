@@ -1,5 +1,14 @@
 # Table of Contents
 
+---
+* [Libri consigliati](https://www.dmi.unict.it/tramonta/se/libri.html)  
+* [Modalita' Esami](https://www.dmi.unict.it/tramonta/se/esame.html)  
+* [Diagrammi UML](https://www.dmi.unict.it/tramonta/se/umldp/uml-design-pattern.html) 
+* [Github del professore E. Tramontana](https://github.com/e-tramontana)  
+* [Codice Java](https://www.dmi.unict.it/tramonta/se/oop/index.html) 
+
+---
+
 1. [Lezione 1](01_05-03-24_ids.md#1-lezione----ingegneria-del-software)
     1. [Informazioni del corso](01_05-03-24_ids.md#informazioni-del-corso)
         1. [Libri consigliati](01_05-03-24_ids.md#libri-consigliati)
@@ -32,3 +41,24 @@
         4. [Astrazioni](04_14-03-24_ids.md#astrazioni)
     4. [Classi](04_14-03-24_ids.md#classi)
         1. [Design Pattern Singleton](04_14-03-24_ids.md#design-pattern-singleton)
+
+5. [Lezione 5]()
+
+6. [Lezione 6](06_21-03-24_ids.md#6-lezione----ingegneria-del-software)
+    1. [Ripasso Ereditarieta'](06_21-03-24_ids.md#ripasso-ereditarieta)
+    2. [Diagramma UML di sequenza](06_21-03-24_ids.md#diagramma-uml-di-sequenza)
+    3. [Polimorfismo e Late Binding](06_21-03-24_ids.md#polimorfismo-e-late-binding)
+        1. [Casting](06_21-03-24_ids.md#casting)
+    
+7. [Lezione 7]()
+
+8. [Lezione 8](08_04-04-24_ids.md#8-lezione----ingegneria-del-software)
+    1. [Recap lezione prima](08_04-04-24_ids.md#recap-lezione-prima)
+    2. [Design Pattern](08_04-04-24_ids.md#design-pattern)
+    3. [**Descrizione** di un Pattern](08_04-04-24_ids.md#descrizione-di-un-pattern)
+    4. [Factory Method](08_04-04-24_ids.md#factory-method)
+        1. [Problema](08_04-04-24_ids.md#problema)
+    5. [Soluzione](08_04-04-24_ids.md#soluzione)
+        1. [Conseguenze](08_04-04-24_ids.md#conseguenze)
+    6. [Dependency Injection](08_04-04-24_ids.md#dependency-injection)
+    7. [Object Pool](08_04-04-24_ids.md#object-pool)
