@@ -63,7 +63,7 @@
     6. [**Dependency Injection**](08_04-04-24_ids.md#dependency-injection)
     7. [Object Pool](08_04-04-24_ids.md#object-pool)
 
-9. [**Lezione 8**](08_04-04-24_ids.md#8-lezione----ingegneria-del-software)
+9. [**Lezione 9**](08_04-04-24_ids.md#8-lezione----ingegneria-del-software)
     1. [ripasso -> Factory Method](08_04-04-24_ids.md#ripasso---factory-method)
     2. [**Abstract Factory**](08_04-04-24_ids.md#abstract-factory)
         1. [Terminologia Abstract Factory](08_04-04-24_ids.md#terminologia-abstract-factory)
@@ -71,3 +71,14 @@
     3. [**Design Pattern Adapter**](08_04-04-24_ids.md#design-pattern-adapter)
         1. [Soluzione:](08_04-04-24_ids.md#soluzione)
         2. [Class Adapter : Variante Adapter](08_04-04-24_ids.md#class-adapter--variante-adapter)
+
+10. [**Lezione 10**](10_11-04-24_ids.md#10-lezione----ingegneria-del-software)
+    1. [Recap sul **Design Pattern Adapter**](10_11-04-24_ids.md#recap-sul-design-pattern-adapter)
+        1. [Variante Adapter : Object Adapter](10_11-04-24_ids.md#variante-adapter--object-adapter)
+            1. [Lazy Initialization](10_11-04-24_ids.md#lazy-initialization)
+        2. [Variante Adapter : Class Adapter](10_11-04-24_ids.md#variante-adapter--class-adapter)
+        3. [Variante : Adapter a due vie](10_11-04-24_ids.md#variante--adapter-a-due-vie)
+        4. [Conseguenze del Design Pattern Adapter](10_11-04-24_ids.md#conseguenze-del-design-pattern-adapter)
+    2. [**Design Pattern Façade**](10_11-04-24_ids.md#design-pattern-façade)
+        1. [Conseguenze](10_11-04-24_ids.md#conseguenze)
+        2. [Implementazione](10_11-04-24_ids.md#implementazione)
