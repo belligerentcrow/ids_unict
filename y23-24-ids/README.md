@@ -90,3 +90,10 @@
         1. [Soluzione DP. State](11_16-04-24_ids.md#soluzione-dp-state)
         2. [Conseguenze:](11_16-04-24_ids.md#conseguenze)
         3. [Diagramma degli stati UML](11_16-04-24_ids.md#diagramma-degli-stati-uml)<br><br>
+
+12. [**Lezione 12**](12_18-04-24_ids.md#12-lezione----ingegneria-del-software)
+    1. [Recap sul Design Pattern State](12_18-04-24_ids.md#recap-sul-design-pattern-state)
+        1. [Analisi codice e cose da ricordare](12_18-04-24_ids.md#analisi-codice-e-cose-da-ricordare)
+    2. [Dall'Analisi dei Requisiti alla Implementazione](12_18-04-24_ids.md#dallanalisi-dei-requisiti-alla-implementazione)
+        1. [Analisi del diagramma degli stati](12_18-04-24_ids.md#analisi-del-diagramma-degli-stati)
+        2. [Design Pattern State Analysis](12_18-04-24_ids.md#design-pattern-state-analysis)
