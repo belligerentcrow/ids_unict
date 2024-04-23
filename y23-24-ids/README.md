@@ -96,4 +96,14 @@
         1. [Analisi codice e cose da ricordare](12_18-04-24_ids.md#analisi-codice-e-cose-da-ricordare)
     2. [Dall'Analisi dei Requisiti alla Implementazione](12_18-04-24_ids.md#dallanalisi-dei-requisiti-alla-implementazione)
         1. [Analisi del diagramma degli stati](12_18-04-24_ids.md#analisi-del-diagramma-degli-stati)
-        2. [Design Pattern State Analysis](12_18-04-24_ids.md#design-pattern-state-analysis)
+        2. [Design Pattern State Analysis](12_18-04-24_ids.md#design-pattern-state-analysis)<br><br>
+
+13. [**Lezione 13**](13_23-04-24_ids.md#13-lezione----ingegneria-del-software)
+    1. [Riepilogo DP State](13_23-04-24_ids.md#riepilogo-dp-state)
+    2. [**Analisi dei requisiti** e fase di progettazione](13_23-04-24_ids.md#analisi-dei-requisiti-e-fase-di-progettazione)
+        1. [Sigle / acronimi](13_23-04-24_ids.md#sigle--acronimi)
+    3. [**Diagramma per ordini**](13_23-04-24_ids.md#diagramma-per-ordini)
+    4. [**Diagramma di Collaborazione**](13_23-04-24_ids.md#diagramma-di-collaborazione)
+    5. [**Diagramma UML delle attivita'**](13_23-04-24_ids.md#diagramma-uml-delle-attivita)
+        1. [Diagramma con flussi paralleli](13_23-04-24_ids.md#diagramma-con-flussi-paralleli)
+        2. [Diagramma con corsie](13_23-04-24_ids.md#diagramma-con-corsie)<br><br>
