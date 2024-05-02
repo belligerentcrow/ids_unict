@@ -107,3 +107,20 @@
     5. [**Diagramma UML delle attivita'**](13_23-04-24_ids.md#diagramma-uml-delle-attivita)
         1. [Diagramma con flussi paralleli](13_23-04-24_ids.md#diagramma-con-flussi-paralleli)
         2. [Diagramma con corsie](13_23-04-24_ids.md#diagramma-con-corsie)<br><br>
+
+14. [**Lezione 14**](14_30-04-24_ids.md#14-lezione----ingegneria-del-software)
+    1. [Approfondimento Diagramma degli Stati](14_30-04-24_ids.md#approfondimento-diagramma-degli-stati)
+        1. [Stati semplici vs Composti](14_30-04-24_ids.md#stati-semplici-vs-composti)
+        2. [Stato composto sequenziale](14_30-04-24_ids.md#stato-composto-sequenziale)
+        3. [Stato composto concorrente](14_30-04-24_ids.md#stato-composto-concorrente)
+    2. [Processi di sviluppo](14_30-04-24_ids.md#processi-di-sviluppo)
+        1. [Analisi dei requisiti.](14_30-04-24_ids.md#analisi-dei-requisiti)
+            1. [Studio di fattibilita'](14_30-04-24_ids.md#studio-di-fattibilita)
+            2. [Analisi dei requisiti vera e propria](14_30-04-24_ids.md#analisi-dei-requisiti-vera-e-propria)
+            3. [Specifica dei requisiti](14_30-04-24_ids.md#specifica-dei-requisiti)
+            4. [Convalida dei requisiti](14_30-04-24_ids.md#convalida-dei-requisiti)
+            5. [Requisiti Funzionali e Non Funzionali](14_30-04-24_ids.md#requisiti-funzionali-e-non-funzionali)
+        2. [Progettazione](14_30-04-24_ids.md#progettazione)
+        3. [Codifica o implementazione**](14_30-04-24_ids.md#codifica-o-implementazione)
+        4. [Convalida o test](14_30-04-24_ids.md#convalida-o-test)
+        5. [Manutenzione](14_30-04-24_ids.md#manutenzione)<br><br>
