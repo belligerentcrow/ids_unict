@@ -1,7 +1,7 @@
 package Altro;
 import java.lang.reflect.ParameterizedType;
 import java.util.ArrayList;
-
+/* 
 class Stack<T>
 {
     private int top, size;
@@ -32,3 +32,4 @@ public T pop ()throws StackUnderflowException{
         Stack<String> s2 = new Stack<String>(size);
     }
 }
+    */
