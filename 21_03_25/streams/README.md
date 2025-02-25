@@ -5,7 +5,13 @@
 ---
 
 <!-- TOC -->
+- [Esempio di stream](#esempio-di-stream)
 - [4.2 - Getting started with Streams](#42---getting-started-with-streams)
+  - [Sequenza di Elementi](#sequenza-di-elementi)
+  - [Fonte](#fonte)
+  - [Operazioni di Data processing](#operazioni-di-data-processing)
+  - [Operatore collect() rispetto agli altri](#operatore-collect-rispetto-agli-altri)
+    - [Codice threeHighCaloricDishNames - see dishesData](#codice-threehighcaloricdishnames---see-dishesdata)
 <!-- /TOC -->
 
 ---
@@ -65,3 +71,20 @@ List<String> threeHighCaloricDishNames =
 * `limit(3)` tronca la lista a 3 numeri. In generale `limit()` limita la lista di elementi "presi in considerazione" dallo stream.  
 <br><br>
 * `collect(toList())` converte gli elementi dello stream in una Lista. In generale, `collect()` converte lo stream in altro.  
+
+### Differences between Streams and Collections libraries
+  
+Metafora di un film: in un formato DVD esso è una ***Collezione***, perché il DVD contiene l'intera quantità di dati che costituiscono il film.  
+Lo stesso video tramite internet è invece uno ***Stream***. Viene scaricato poco alla volta, mentre si vede il frammento di esso che l'utente sta guardando.  
+Si consideri pure che il lettore video potrebbe non avere neanche la possibilità di caricarer l'intero film tutto in una volta. E sarebbe controproducente mostrare il primo frame solo nel momento in cui l'ultimo sia stato caricato, i tempi di attesa sarebbero assurdi.  
+  
+La sostanziale differenza tra **Streams** e **Collezioni** consta nel *quando* gli elementi vengono caricati: nelle collezioni, ogni elemento viene caricato dall'inizio, la struttura dati contiene tutti i dati. Ogni elemento viene computato prima che qualcosa venga inserito in memoria.  
+  
+Uno **Stream** invece è una struttura dati concettualmente fissa, i quali elementi vengono **computati on-demand**. Altra differenza: è possibile creare uno stream infinito.  
+  
+Il concetto fondamentale degli streams è il fatto che essi sono fatti affinché gli utenti possano estrarre da essi ciò che a loro serve, quando serve. Una sorta di *"costruzione lazy".*  *Metafora: una tipografia on-demand, contro un archivio o biblioteca piena di libri.*  
+  
+### Attraversabili solo una volta - Consumo dello Stream 
+  
+
+  
