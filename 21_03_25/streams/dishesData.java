@@ -2,9 +2,11 @@ package streams;
 
 import java.util.Arrays;
 import java.util.List;
+import static java.util.stream.Collectors.toList;
 
 public class dishesData{
-    List<Dish> menu = Arrays.asList(
+    //had to make it static for the main
+    static List<Dish> menu = Arrays.asList(
         new Dish("pork", false,800, Dish.Type.MEAT),
         new Dish("beef", false, 700, Dish.Type.MEAT),
         new Dish("chicken", false, 400, Dish.Type.MEAT),
@@ -16,7 +18,16 @@ public class dishesData{
         new Dish("salmon", false, 450, Dish.Type.FISH)
     );
 
-
-
+    public static void main(String[] args) {
+        List<String> threeHighCaloricDishNames = 
+        menu.stream()
+            .filter(d -> d.getCalories() > 300)
+            .map(Dish::getName)
+            .limit(3)
+            .collect(toList());
     
+        System.out.println(threeHighCaloricDishNames);
+    }
+
+
 }
