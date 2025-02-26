@@ -12,6 +12,8 @@
   - [Operazioni di Data processing](#operazioni-di-data-processing)
   - [Operatore collect() rispetto agli altri](#operatore-collect-rispetto-agli-altri)
     - [Codice threeHighCaloricDishNames - see dishesData](#codice-threehighcaloricdishnames---see-dishesdata)
+  - [Differences between Streams and Collections libraries](#differences-between-streams-and-collections-libraries)
+  - [Attraversabili solo una volta - Consumo dello Stream](#attraversabili-solo-una-volta---consumo-dello-stream)
 <!-- /TOC -->
 
 ---
