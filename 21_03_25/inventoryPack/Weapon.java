@@ -15,6 +15,7 @@ public class Weapon extends Item {
     public String getType(){
         return this.type;
     }
+    
 
     @Override
     public String toString(){
