@@ -1,4 +1,4 @@
-# Java Streams - notes
+# Java Streams - notes chapter 4
 
 *from Java 8 in Action - Urma*
 
@@ -14,6 +14,9 @@
     - [Codice threeHighCaloricDishNames - see dishesData](#codice-threehighcaloricdishnames---see-dishesdata)
   - [Differences between Streams and Collections libraries](#differences-between-streams-and-collections-libraries)
   - [Attraversabili solo una volta - Consumo dello Stream](#attraversabili-solo-una-volta---consumo-dello-stream)
+  - [Differenze in iterazione per estrapolare dati](#differenze-in-iterazione-per-estrapolare-dati)
+  - [Funzioni stream](#funzioni-stream)
+  - [Riassunto del Quarto Capitolo](#riassunto-del-quarto-capitolo)
 <!-- /TOC -->
 
 ---
@@ -88,5 +91,57 @@ Il concetto fondamentale degli streams è il fatto che essi sono fatti affinché
   
 ### Attraversabili solo una volta - Consumo dello Stream 
   
-
+Uno **stream** può essere attraversato una volta sola, come gli iteratori all'interno di un Loop. Possiamo estrapolare dallo stream dei dati che possiamo utilizzare di nuovo, come delle collezioni, ma non è possibile fare questo se per esempio lo stream restituisce un I/O (`System.out::println` ad esempio)  
   
+>[!tldr] E' possibile considerare uno stream come dei valori che si estendono "nel tempo", a differenza delle collezioni, considerabili dei valori che si estendono "nello spazio" (memoria).  
+  
+
+### Differenze in iterazione per estrapolare dati  
+  
+Le collezioni utilizzano iteratori "esterni", mentre gli streams utilizzano "iteratori interni"  
+  
+**Collezioni**:  
+```java
+List<String> names = new ArrayList<>();
+for(Dish d : menu){
+  names.add(d.getName());
+}
+```  
+  
+**Streams**:  
+```java
+List<String> names = menu.stream()
+                         .map(Dish::getName)
+                         .collect(toList());
+```
+Quest'ultimo fa la stessa cosa: crea una lista dei nomi di ogni piatto contenuto in menu. 
+  
+```java
+List<String> names = menu.stream()
+                         .filter(d -> d.getCalories() > 300)
+                         .map(Dish::getName)
+                         .limit(3)
+                         .collect(toList());
+```
+
+### Funzioni stream  
+  
+(Le specifiche saranno spiegate meglio dopo)  
+  
+filter()  
+map()  
+limit()  
+sorted()  
+distinct()  
+forEach()  
+count()  
+collect()  
+  
+### Riassunto del Quarto Capitolo  
+  
+Uno stream è una sequenza di elementi da una fonte che supporta operazioni di data processing.  
+Gli Streams utilizzano un tipo di iterazione interna, a differenza delle collezioni; si applica astrazione all'iterazione tramite metodi come `filter()`, `map()`, e `sorted()`.  
+Ci sono due tipi di operazioni Stream: **Intermedie** e **Terminali**.  
+Le operazioni **intermedie**, come `filter()` e `map()` ritornano un'altro stream, e possono essere concatenate in una pipeline, ma non ritornano risulato.  
+Operazioni **terminali** come `forEach()` e `count()` non ritornano uno stream ma un altro tipo di valore: sono utilizzate per processare lo stream al suo termine, per produrre il risultato, appunto, finale.  
+Gli elementi di uno stream sono computati on-demand.   
