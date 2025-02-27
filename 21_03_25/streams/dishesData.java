@@ -4,8 +4,11 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 import static java.util.stream.Collectors.toList;
+
+import java.util.ArrayList;
 
 public class dishesData{
     //had to make it static for the main
@@ -89,7 +92,31 @@ public class dishesData{
                                  .getName();
         System.out.println("The longest word in the menu is " + longestName + ", with " + longest + " letters");
 
+        //Quiz 5.2.1 - Given a list of numbers, return a list of the square of each number. 
+        List<Integer> numbsToSquare = Arrays.asList(1, 2, 3, 5, 10, 13, 30, 50, 100);
+        List<Integer> squareMe = numbsToSquare.stream()
+                                              .map(x -> x*x)
+                                              .collect(Collectors.toList());
+        System.out.println(squareMe);
+
+        //Quiz 5.2.2 - Given 2 lists of numbers, return a list containing all pairs of numbers. For example, for [1,2,3] and [3,4] return [(1,3), (1,4), (2,3), (2,4), (3,3), (3,4)]. Can represent the pair as an array with two elements.  
+
+        List<Integer> firstList = Arrays.asList(1,2,3);
+        List<Integer> secondList = Arrays.asList(3,4);
+        List<int []> solution5_2_2 = firstList.stream()
+                                            .flatMap(i -> secondList.stream().map(j->new int[]{i,j}))
+                                            .collect(Collectors.toList());
+        System.out.println("Soluzione 5.2.2 = " + solution5_2_2);
         
+        //Quiz 5.2.3 - Extend the previous example, returning only pairs whose sum is divisible by 3.
+        List<int []> solution5_2_3 = firstList.stream()
+                                              .flatMap(i-> secondList.stream()
+                                                .filter(j->(i+j)%3==0)
+                                                .map(j -> new int[]{i,j})
+                                              )                                              
+                                              .collect(toList());
+        System.out.println("Soluzione 5.2.3 = " + solution5_2_3);
+                        
     }
 
 
