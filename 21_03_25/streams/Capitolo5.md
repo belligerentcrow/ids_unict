@@ -113,4 +113,7 @@ E' possibile ritornare il valore con `.get()`, o eseguire una operazione condizi
   
 #### Trovare il primo elemento - .findFirst  
   
-Vorremo voler trovare il primo elemento disponibile di una certa collezione - ad esempio una lista ordinata per un certo criterio. `.findFirst()` fa proprio questo, ed è simile a `.findAny()`
+Vorremo voler trovare il primo elemento disponibile di una certa collezione - ad esempio una lista ordinata per un certo criterio. `.findFirst()` fa proprio questo, ed è simile a `.findAny()` 
+  
+La differenza tra i due è l'ordine: in dubbio, se non è necessario che l'eventuale Optional punti al primo disponibile, conviene utilizzare `.findAny()`, poichè potrebbe ottimizzare con parallelismi.  
+  

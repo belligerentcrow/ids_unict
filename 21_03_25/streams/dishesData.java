@@ -116,6 +116,10 @@ public class dishesData{
                                               )                                              
                                               .collect(toList());
         System.out.println("Soluzione 5.2.3 = " + solution5_2_3);
+
+        
+        
+       
                         
     }
 

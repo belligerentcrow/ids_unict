@@ -38,11 +38,15 @@ public class Main {
         List<String> tooMany = myItems.stream().filter(d -> d.getQuantity()>10).map(x -> x.getName()).toList();
         
         //weapon with the highest damage
-        List<String> ouchie = myItems.stream()
+        /* 
+        String ouchie = myItems.stream()
                                .filter(x -> x instanceof Weapon)
-                               .map(Item::getName)
-                               .collect(Collectors.toList());
+                               .map(IN)
+                               .max(Weapon::getDamage)
+                               .get()
+                               .getName();
         System.out.println(ouchie);
+        */
 
         for(String x : tooMany){
             System.out.println(x);
