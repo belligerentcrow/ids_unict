@@ -30,12 +30,12 @@ public class Login {
         if(u1.checkPassword(mys)){
             System.out.println("The login has been successful. Welcome, "+ u1.getUsername() +"!");
             checkUserLog(u1);
-            userLogs.stream().findFirst().get().newAccess(LocalDateTime.now());
+            userLogs.stream().filter(x -> x.getUtente() == u1).findAny().get().newAccess(LocalDateTime.now());
             return true;
         }else{
             System.out.println("Login unsuccessful. Try again. ");
             checkUserLog(u1);
-            userLogs.stream().findFirst().get().unsuccessfulAttempt();
+            userLogs.stream().filter(x -> x.getUtente() == u1).findAny().get().unsuccessfulAttempt();
             return false;
         }
     }
