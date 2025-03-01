@@ -8,8 +8,6 @@ import java.util.stream.Collectors;
 
 import static java.util.stream.Collectors.toList;
 
-import java.util.ArrayList;
-
 public class dishesData{
     //had to make it static for the main
     static List<Dish> menu = Arrays.asList(
