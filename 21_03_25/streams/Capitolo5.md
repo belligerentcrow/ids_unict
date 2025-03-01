@@ -24,7 +24,7 @@
 Il fatto è che con gli stream è possibile *lasciare che sia la API Stream stessa a prendersi cura di come processare i dati*, in maniera efficiente e ottimizzata, e possibilmente parallelizzata.  
 
 ### Filtering and Slicing  
-  
+   
 #### Filtering con predicato - .filter(predicato)
   
 `filter()` prende come argomento un predicato (funzione che ritorna boolean) e ritorna un altro stream che include tutti gli elementi che rendono vero il predicato.  

@@ -10,4 +10,4 @@ The userLogin() method returns a Boolean and takes as input a Utente and a Strin
 
 If the password is correct - through the Utente method checkPassword - which does not need to reveal it - then the userLogin is successful, and a Boolean is returned. If the login is unsuccessful, then a unsuccessful attempt is logged.
 
-ToDo: check if Utente u1 exists before try to login. Add more nuance and data to the Utente class. Allow for a "forgotten your password" style of interaction.
+ToDo: check if Utente u1 exists before try to login. Add more nuance and data to the Utente class. Allow for a "forgotten your password" style of interaction. Add comments about methods functionalities

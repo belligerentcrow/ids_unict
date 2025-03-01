@@ -13,7 +13,6 @@ public class UserLog {
     private Integer unsuccessfulLogins;
     DateTimeFormatter formatter = DateTimeFormatter.ofPattern("hh:mm a");
 
-
     public String timeFormatter(LocalTime mytime){
         return mytime.format(formatter);
     }

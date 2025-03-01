@@ -16,6 +16,7 @@ public class Utente{
     public String getUsername(){
         return this.username;
     }
+    
     public Boolean checkPassword(String inserted){
         if(inserted == passw){
             return true;
