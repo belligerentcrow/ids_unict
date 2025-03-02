@@ -1,4 +1,4 @@
-package Logins;
+package DesignPatterns.Singleton;
 
 public class Client {
     public static void main(String[] args) {
