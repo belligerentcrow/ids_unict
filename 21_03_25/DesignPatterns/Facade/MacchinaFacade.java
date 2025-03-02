@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MacchinaFacade {
-    CoffeeGrinder coffGrind;
-    CoffeePourer coffPour;
-    List<Grains> machineGrains;
+    private CoffeeGrinder coffGrind;
+    private CoffeePourer coffPour;
+    private List<Grains> machineGrains;
 
     public MacchinaFacade(){
         this.coffGrind = new CoffeeGrinder();
