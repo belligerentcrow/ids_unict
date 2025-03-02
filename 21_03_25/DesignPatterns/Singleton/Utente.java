@@ -1,4 +1,4 @@
-package Logins;
+package DesignPatterns.Singleton;
 
 import java.time.LocalDate;
 

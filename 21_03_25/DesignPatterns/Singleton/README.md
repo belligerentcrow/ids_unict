@@ -1,3 +1,5 @@
+# Login system - Singleton+ 
+
 The main in client allows to create users by imputting usernames and passwords.
 
 The user class contains a LocalDate variable which specifies the date their profile was created.
