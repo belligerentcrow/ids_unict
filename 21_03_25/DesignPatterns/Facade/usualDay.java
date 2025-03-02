@@ -10,6 +10,11 @@ public class usualDay {
         maint1.doMaintenance();
         a1.getCofi(machine);
         a2.getCofi(machine);
+        a1.getCofi(machine);
+        a2.getCofi(machine);
+        a2.getCofi(machine);
+        maint1.doMaintenance();
+        a1.getCofi(machine);
     }
     
 }
