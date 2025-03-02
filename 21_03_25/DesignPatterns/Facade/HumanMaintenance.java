@@ -11,6 +11,7 @@ public class HumanMaintenance {
     }
 
     public void doMaintenance(){
+        getGrainsFromCompany();
         this.machine.maintenance(this.gr);
     }
     
