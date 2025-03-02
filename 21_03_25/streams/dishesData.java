@@ -115,7 +115,10 @@ public class dishesData{
                                               .collect(toList());
         System.out.println("Soluzione 5.2.3 = " + solution5_2_3);
 
+        // Quiz 5.3.1 : Count the number of dishes in a stream using map and reduce methods.
         
+        Integer numDishes = menu.stream().map(x -> 1).reduce(0, Integer::sum);
+        System.out.println("There are " +numDishes + " dishes in the menu.");
         
        
                         
