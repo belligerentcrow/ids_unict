@@ -1,5 +1,3 @@
-package DesignPatterns.Facade;
-
 public class CoffeePourer {
     private int temperature; //celsius..
     private int velocityOfPouring;

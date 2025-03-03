@@ -1,5 +1,3 @@
-package DesignPatterns.Facade;
-
 public class Espresso {
     private int acidity;
     private int bitterness;

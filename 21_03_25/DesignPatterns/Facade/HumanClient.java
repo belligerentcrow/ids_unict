@@ -1,5 +1,3 @@
-package DesignPatterns.Facade;
-
 public class HumanClient {
     private Espresso cofi;
     private String name;

@@ -1,5 +1,3 @@
-package DesignPatterns.Facade;
-
 public class CoffeeGrinder {
     private int levelOfGrinding;
     private int levelOfWear;

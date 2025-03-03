@@ -1,5 +1,3 @@
-package DesignPatterns.Facade;
-
 public class Grains {
     private int levelOfRoastness;
     private String quality;

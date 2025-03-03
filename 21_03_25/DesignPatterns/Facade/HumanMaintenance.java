@@ -1,5 +1,3 @@
-package DesignPatterns.Facade;
-
 public class HumanMaintenance {
     private MacchinaFacade machine;
     private Grains gr;
