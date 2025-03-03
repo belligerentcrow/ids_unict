@@ -1,17 +1,22 @@
-package DesignPatterns.Facade;
-
 import java.util.ArrayList;
 import java.util.List;
 
 public class MacchinaFacade {
+    private static MacchinaFacade machine;
     private CoffeeGrinder coffGrind;
     private CoffeePourer coffPour;
     private List<Grains> machineGrains;
 
-    public MacchinaFacade(){
+    private MacchinaFacade(){
         this.coffGrind = new CoffeeGrinder();
         this.coffPour = new CoffeePourer();
         machineGrains = new ArrayList<>();
+    }
+
+    public static MacchinaFacade getInstance(){
+        if (machine == null)
+            machine = new MacchinaFacade();
+        return machine;
     }
 
     public void maintenance(Grains grains){
