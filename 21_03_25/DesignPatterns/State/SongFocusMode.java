@@ -1,4 +1,7 @@
-//ConcreteStateB
+/** ConcreteState A implements MyDisplay
+ * 
+ * 
+*/
 public class SongFocusMode implements MyDisplay{
     private SongLibrary songlib;
     private String modeTitle = "SongFocusMode";
