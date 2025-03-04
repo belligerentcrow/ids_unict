@@ -18,4 +18,7 @@ public class Song {
     public int getSecondsDuration() {
         return secondsDuration;
     }
+    public String toString(){
+        return this.title + " by " + this.author + " - " + (this.secondsDuration)/60 + "m";
+    }
 }
