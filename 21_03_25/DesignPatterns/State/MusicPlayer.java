@@ -9,7 +9,6 @@ public class MusicPlayer{
         this.musiclibr = musiclib;
         isFocus = false;
         displayState = new FullPlaylistMode(musiclib);
-        
     }
 
     public void switchMode(){
@@ -33,7 +32,7 @@ public class MusicPlayer{
 
     public void nextSong(){
         if(musiclibr.next().isPresent()){
-            //displayState.visualizza(musiclibr.getCurrentSong().get());
+
         }else{
             System.out.println("........");
         }
@@ -41,16 +40,10 @@ public class MusicPlayer{
 
     public void prevSong(){
         if(musiclibr.previous().isPresent()){
-            //displayState.visualizza(musiclibr.getCurrentSong().get());
+
         }else{
             System.out.println("........");
         }
     }
 
-    public void modeSongFocus(){
-
-    }
-    public void modePlayList(){
-
-    }
 }
