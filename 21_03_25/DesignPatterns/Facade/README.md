@@ -10,7 +10,9 @@ The class MacchinaFacade has four private attributes: `private CoffeeGrinder cof
   
 The class MacchinaFacade applies the design pattern Singleton. Its constructor is private, and it holds the static attribute of its only instance, which can be accessed through the static method `public static MacchinaFacade getInstance()`, which returns the only instance of MacchinaFacade, or creates it if it has not yet been instanciated.   
   
+//
 
+IDEA: DP decorator per bevande extra es: aggiungere latte al caffé o zucchero
   
 
   
