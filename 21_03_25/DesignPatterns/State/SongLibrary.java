@@ -3,17 +3,19 @@ import java.util.List;
 import java.util.Optional;
 
 public class SongLibrary {
+    /** contains the songs inside the playlist */
     private List<Song> myLibrary;
-    private int numOfSongs;
+    
+    /** "head" of SongLibrary playlist**/
     private int whereInList;
-
-
     
     public SongLibrary() {
         myLibrary = new ArrayList<>();
         whereInList = 0;
     }
 
+    /** checks and then if it is possible to get a next, it returns it (or the absence of it) through an Optional<Song> object through which an object Song can be accessed through the `.get()` method implemented in the Optional library  
+     */
     public Optional<Song> next(){
         if(!(myLibrary.isEmpty())&& whereInList < myLibrary.size()-1){
             whereInList++;
@@ -44,27 +46,17 @@ public class SongLibrary {
         }
     }
 
-    public boolean isEmpty(){
-        return myLibrary.isEmpty();
-    }
-
-    public List<Song> getMyLibrary() {
-        return myLibrary;
-    }
     public void addSong(Song s){
         myLibrary.add(s);
-        numOfSongs++;
         System.out.println("Song "+ s.getTitle() + " by " + s.getAuthor() + " added to library.");
     }
 
     public void removeCurrentSong(){
         if(!(myLibrary.isEmpty())){
-            --numOfSongs;
             myLibrary.remove(whereInList);
         }else
             System.out.println("No songs to remove.");
     }
-
 
     public Optional<Song> getCurrentSong(){
         if(!(myLibrary.isEmpty())){
@@ -73,6 +65,14 @@ public class SongLibrary {
             System.out.println("Can't get current song. No songs in list");
             return Optional.empty();
         }
+    }
+
+    public boolean isEmpty(){
+        return myLibrary.isEmpty();
+    }
+
+    public List<Song> getMyLibrary() {
+        return myLibrary;
     }
 
     public int getWhereInList() {
