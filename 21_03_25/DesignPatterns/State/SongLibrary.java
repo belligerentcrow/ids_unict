@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 public class SongLibrary {
     private List<Song> myLibrary;
@@ -7,37 +8,39 @@ public class SongLibrary {
     private int whereInList;
 
 
+    
     public SongLibrary() {
         myLibrary = new ArrayList<>();
         whereInList = 0;
     }
 
-    public Song next() throws Exception{
-        if(numOfSongs >0 && whereInList < numOfSongs){
+    public Optional<Song> next(){
+        if(!(myLibrary.isEmpty())&& whereInList < myLibrary.size()-1){
             whereInList++;
-            return myLibrary.get(whereInList);
+            return Optional.of(myLibrary.get(whereInList));
         }
         else if (myLibrary.isEmpty()){
-            throw new Exception("Can't show next. No songs in playlist");
+            System.out.println("Can't show next. No songs in playlist");
+            return Optional.empty();
         }
         else{
             System.out.println("Last song in list. Returning to first");
             whereInList = 0;
-            return myLibrary.get(whereInList);
+            return Optional.of(myLibrary.get(whereInList));
         }
     }
 
-    public Song previous() throws Exception {
-        if(numOfSongs>0 && whereInList>0){
+    public Optional<Song> previous(){
+        if(!(myLibrary.isEmpty()) && whereInList>0){
             whereInList--;
-            return myLibrary.get(whereInList);
-
+            return Optional.of(myLibrary.get(whereInList));
         }else if(myLibrary.isEmpty()){
-            throw new Exception("Can't show previous. No songs in list.");
+            System.out.println("Can't show previous. No songs in list.");
+            return Optional.empty();
         }else{
             whereInList = myLibrary.size()-1;
-            System.out.println("First song in list. Showing last songs.");
-            return myLibrary.get(whereInList);
+            System.out.println("First song in list. Returning to last song.");
+            return Optional.of(myLibrary.get(whereInList));
         }
     }
 
@@ -54,15 +57,25 @@ public class SongLibrary {
         System.out.println("Song "+ s.getTitle() + " by " + s.getAuthor() + " added to library.");
     }
 
-    public void removeCurrentSong() throws Exception{
-        myLibrary.remove(whereInList);
+    public void removeCurrentSong(){
+        if(!(myLibrary.isEmpty())){
+            --numOfSongs;
+            myLibrary.remove(whereInList);
+        }else
+            System.out.println("No songs to remove.");
     }
 
-    public Song getCurrentSong() throws Exception{
+
+    public Optional<Song> getCurrentSong(){
         if(!(myLibrary.isEmpty())){
-            return myLibrary.get(whereInList);
+            return Optional.of(myLibrary.get(whereInList));
         } else {
-            throw new Exception("Can't get current song. No songs in list");
+            System.out.println("Can't get current song. No songs in list");
+            return Optional.empty();
         }
+    }
+
+    public int getWhereInList() {
+        return whereInList;
     }
 }
