@@ -15,5 +15,7 @@ The SongLibrary's method `public Optional<Song> next()` checks and then if it is
 The `public void addSong(Song s)` adds a song to the `List<Song> myLibrary` list, and `public void removeCurrentSong()` removes the selected song in said List, if the List is not empty.  
 
 The method `public Optional<Song> getCurrentSong()` works in a similar way as the `next()` and the `prev()`. It checks if the List MyLibrary is empty. If it is not, then it returns an Optional object which contains the current song, which is at the index given by the int `whereInList`. If the list is empty, then this method returns an empty Optional.  
-  
+
+
+
 // TO-DO : practice with streams by adding more songs.

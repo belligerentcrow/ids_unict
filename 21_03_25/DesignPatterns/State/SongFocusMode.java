@@ -1,4 +1,4 @@
-/** ConcreteState A implements MyDisplay
+/** ConcreteStateA implements MyDisplay
  * 
  * 
 */
