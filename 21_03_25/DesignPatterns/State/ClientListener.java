@@ -21,6 +21,7 @@ public class ClientListener {
         //adding them to the library
         myLibrary.addSong(song3);
         myLibrary.addSong(song4);
+        myLibrary.addSong(song5);
 
         //using the "vlc" player
         vlc.playMusic();
