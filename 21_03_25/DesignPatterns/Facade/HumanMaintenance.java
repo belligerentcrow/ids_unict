@@ -17,7 +17,7 @@ public class HumanMaintenance {
         this.machine = mach;
     }
 
-    public void getGrainsFromCompany(){
+    private void getGrainsFromCompany(){
         int randRoast = (int)(Math.random() *11);
         int randQual = (int)(Math.random()*2);
         String qual = "";

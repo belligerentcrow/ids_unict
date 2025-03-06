@@ -18,4 +18,5 @@ The method `public Optional<Song> getCurrentSong()` works in a similar way as th
 
 
 
-// TO-DO : practice with streams by adding more songs.
+// TO-DO : class with streams methods in order to do more specific queries. es: "give me all songs under 4 minutes" or "the first three songs by this artist" or count the songs in playlists" or "create a list with this specific subset of songs which satisfy this requirement"   
+  
