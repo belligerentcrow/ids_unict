@@ -10,7 +10,7 @@ The class MacchinaFacade has four private attributes: `private CoffeeGrinder cof
   
 The class HumanMaintenance interacts with MacchinaFacade -> through the HumanMaintenance method `public void doMaintenance()`, which, through the grains obtained with the method `private void getGrainsFromCompany()`, is able to call the method `void maintenance(Grains grains)` of the class MacchinaFacade. This method will call the maintenance methods of the CoffeeGrinder and the CoffeePourer instances that the MacchinaFacade has, then it will add the grains passed by the HumanMaintenance to the machineGrains List of Grains.
   
-The class MacchinaFacade applies the design pattern Singleton. Its constructor is private, and it holds the static attribute of its only instance, which can be accessed through the static method `public static MacchinaFacade getInstance()`, which returns the only instance of MacchinaFacade, or creates it if it has not yet been instanciated.   
+The class MacchinaFacade implements the design pattern Singleton. Its constructor is private, and it holds the static attribute of its only instance, which can be accessed through the static method `public static MacchinaFacade getInstance()`, which returns the only instance of MacchinaFacade, or creates it if it has not yet been instanciated.   
     
 // idea : create the `public Espresso experiencedMode(Grains grains)` method which will allow the user to set the temperature of the pourer, the grinding speed of the grinder, and to use "their own, personalized" coffee grains.  
 
